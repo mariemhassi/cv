@@ -1,0 +1,161 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.cv {
+  max-width: 1000px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* COLONNE GAUCHE */
+.sidebar {
+  text-align: center;
+  background: #e6dac7;
+  padding: 40px 20px;
+  position: relative;
+  align-items: center;
+}
+
+.photo-wrap {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.photo-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contact {
+   
+  margin-top: 240px;
+  font-size: 14px;
+  color: #444;
+  line-height: 2;
+}
+
+.section {
+  margin-top: 25px;
+}
+
+.section h4 {
+  font-weight: 600;
+}
+
+.section ul {
+  margin-top: 10px;
+  list-style: none;
+  font-size: 14px;
+}
+
+
+/* COLONNE DROITE */
+.main {
+  padding: 40px;
+}
+
+.main h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 60px;
+}
+
+.main h2 {
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  position: relative;
+  border-left: 4px solid #d2c6b5;
+  padding-left: 30px;
+}
+
+.block {
+  margin-bottom: 30px;
+  position: relative;
+}
+
+.dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: white;
+  border: 3px solid #d2c6b5;
+  position: absolute;
+  left: -41px;
+  top: 5px;
+}
+
+.block h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.block h4 {
+  margin-top: 10px;
+}
+
+.role {
+  font-style: italic;
+  color: #777;
+}
+
+.block ul {
+  margin-left: 20px;
+  margin-top: 5px;
+}
+
+/* COMPETENCES */
+.skills {
+  margin-top: 10px;
+}
+
+.skills span {
+  display: inline-block;
+  background: #f3ede5;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 5px;
+  font-size: 14px;
+  min-width: 220px;
+  text-align: center;
+}
+/* Animation rotation photo */
+.photo-wrap img {
+    transition: 0.8s ease;
+}
+
+.photo-wrap img:hover {
+    transform: rotate(360deg);
+}
+.main h1 {
+    transition: 0.4s ease;
+}
+
+.main h1:hover {
+    transform: scale(1.1); /* zoom */
+}
