@@ -159,3 +159,9 @@ body {
 .main h1:hover {
     transform: scale(1.1); /* zoom */
 }
+.block > *:not(h3):not(.dot) {
+  display: none;  
+}
+.block h3 {
+  cursor: pointer;
+}
